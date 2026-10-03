@@ -26,3 +26,6 @@ poetry.lock
 
 # Claude Code
 .claude/
+
+# Fork: internal working notes and test outputs (see FORK.md)
+temp/

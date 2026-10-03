@@ -1,0 +1,14 @@
+[
+  {
+    "name": "MangaJDM.com logo: the model erased its left half",
+    "box": [2200, 1100, 2620, 1230],
+    "seed": [2205, 1225],
+    "barriers": []
+  },
+  {
+    "name": "Mt. Fuji right slope: the outline stops ~15px short of the right panel",
+    "box": [1700, 380, 2135, 760],
+    "seed": [2050, 420],
+    "barriers": [[[2088, 588], [2112, 598]]]
+  }
+]
