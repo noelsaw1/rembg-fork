@@ -14,6 +14,7 @@ Post-processing scripts that repair a cutout after `rembg` has produced it. They
 | [review.py](fine_tuning/review.py) | Composites a cutout (or a boxed area of it) over magenta, black and white so fringes and missing areas are obvious. |
 | [regions/](fine_tuning/regions/) | One JSON file per image listing the boxes `fix_regions.py` should repair. |
 | [knockout_black.py](fine_tuning/knockout_black.py) | Turns line art into black ink on a fully transparent background, white inside the art included. For one-colour shirt transfers. Works from the original alone; no `rembg` cutout. |
+| [checkerkill.py](fine_tuning/checkerkill.py) | Removes a grey/white checkerboard that was drawn into the image as fake transparency. Seals gaps in the outlines, clears outside the art and repaints inside it solid white. `checkerkill.py SRC OUT [SEAL=10]`; raise SEAL if the outside leaks into an enclosed area. |
 
 Typical use, from the repo root with the virtual environment active:
 

@@ -25,7 +25,8 @@ __pycache__/
 poetry.lock
 
 # Claude Code
-.claude/
+.claude/*
+!.claude/skills/
 
 # Fork: internal working notes and test outputs (see FORK.md)
 temp/
