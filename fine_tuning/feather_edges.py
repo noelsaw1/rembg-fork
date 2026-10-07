@@ -8,7 +8,7 @@ untouched. Corners get both fades, so they round off softly.
 Works on transparent PNGs (1c, 2c) and on plain RGB images, which gain an
 alpha channel.
 
-usage: feather_edges.py INPUT OUTPUT [PERCENT=5]
+usage: feather_edges.py INPUT OUTPUT [PERCENT=15]
 """
 
 import sys
@@ -18,7 +18,7 @@ from PIL import Image
 
 Image.MAX_IMAGE_PIXELS = None
 
-DEFAULT_PERCENT = 5.0
+DEFAULT_PERCENT = 15.0
 
 
 def ramp(n: int, band: int) -> np.ndarray:
